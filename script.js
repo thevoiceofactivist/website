@@ -80,6 +80,17 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    const video = document.getElementById('bg-video');
+
+// Example: Pause video on click
+video.addEventListener('click', () => {
+  if (video.paused) {
+    video.play();
+  } else {
+    video.pause();
+  }
+});
     
     // Other existing JavaScript remains the same
     // ...
